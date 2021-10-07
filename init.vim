@@ -51,7 +51,6 @@ let g:NERDAltDelims_c = 1
 map <C-b> :!time g++ -std=c++17 -Wshadow -Wall -g % -Wno-unused-result -o %:r <CR>
 map <C-d> :!time g++ -std=c++17 -Wshadow -Wall -g % -o -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG %:r <CR>
 map <C-r> :!./%:r < sample.in <CR>
-autocmd BufNewFile *.cpp 0r ~/Templates/template.cpp
 
 map <C-n> :bn<CR>
 map <C-p> :bp<CR>
